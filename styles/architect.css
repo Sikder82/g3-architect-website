@@ -6,8 +6,6 @@
     font-family: 'Work Sans', sans-serif;
 }
 .primary-button{
-    width: 180px;
-    height: 64px;
     border-radius: 8px;
     background-color: #FF900E;
     color: #fff;
@@ -15,6 +13,8 @@
     text-align: center;
     font-weight: 600;
     border: none;
+    padding: 20px 25px;
+    cursor: pointer;
 }
 
 header{
@@ -44,7 +44,7 @@ nav > ul > li > a{
     color: #424242;
     font-size: 1.1rem;
     font-weight: 500;
-    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 /*Banner related style*/
@@ -69,4 +69,22 @@ nav > ul > li > a{
     width: 100%;
     height: 100%;
     margin-top: 40px;
+}
+
+
+/*Responsive for Mobile device*/
+@media screen and (max-width: 700px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+
+/*Responsive for Medium Device*/
+@media screen and (max-width: 992) {
+    header{
+        padding: 20px 50px;
+    }
 }
