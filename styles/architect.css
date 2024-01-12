@@ -80,6 +80,7 @@ main{
 .features{
     display: flex;
     align-items: center;
+    margin: 50px 0;
 }
 .team-img{
     display: grid;
@@ -93,7 +94,6 @@ main{
 }
 .team-contant > h3{
     color: #727272;
-    width: 468px;
     font-size: 2.8rem;
     font-weight: 500;
 }
@@ -122,6 +122,12 @@ main{
     }
     nav{
         flex-direction: column;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .team-img{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
