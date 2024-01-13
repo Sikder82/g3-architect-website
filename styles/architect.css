@@ -5,7 +5,7 @@
     font-family: 'Inter', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
-.primary-button{
+.primary-button, .secondary-button{
     border-radius: 8px;
     background-color: #FF900E;
     color: #fff;
@@ -72,15 +72,15 @@ nav > ul > li > a{
     margin-top: 40px;
 }
 
-/*Feature Section Design*/
+/*Teams Section Design*/
 main{
-    max-width: 1440px;
-    margin: 0 auto;
+    padding: 0 240px;
 }
-.features{
+.teams{
     display: flex;
     align-items: center;
-    margin: 50px 0;
+    margin: 50px auto;
+    max-width: 1440px;
 }
 .team-img{
     display: grid;
@@ -114,13 +114,71 @@ main{
     padding: 24px 0 32px 0;
 }
 
+/*Features section Design*/
+.features{
+    display: flex;
+    gap: 100px;
+    margin: 100px 0;
+}
+
+.features-titel{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+.features-discription{
+    color:  #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.topic > div{
+    padding: 30px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.topic > div > h4{
+    color:  #131313;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.topic > div > p{
+    color:  #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/*Facts Section Design*/
+.fact-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 24px;
+}
+.facts-discription{
+    color:  #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
 
 /*Responsive for Mobile device*/
 @media screen and (max-width: 700px) {
     header{
         padding: 20px;
     }
-    nav, .features{
+    nav, .teams{
         flex-direction: column;
     }
     .team-img{
@@ -136,7 +194,7 @@ main{
     header{
         padding: 20px 50px;
     }
-    nav, .features{
+    nav, .teams{
         flex-direction: column;
     }
     .team-contant{
